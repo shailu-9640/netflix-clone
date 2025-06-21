@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+</head>
+<body>
+  <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="netflix" class="logo" />
+      </div>
+      <div class="navbar-nav">
+        <a href="#" class="nav-link">Home</a>
+         <a href="#" class="nav-link">Tv Shows</a>
+          <a href="#" class="nav-link">Movies</a>
+           <a href="#" class="nav-link">New & Popular</a>
+            <a href="#" class="nav-link">My Lists</a>
+      </div>
+      <div class="navbar-right">
+        <i class="fas fa-search"></i>
+         <i class="fas fa-bell"></i>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="profile image" class="profile-icon">
+
+      </div>
+    </nav> 
+    <!-- hero sec -->
+    <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Strangers Things</h1>
+          <p class="hero-description">
+            When a young boy vanishes, a small town uncovers a mystery involving
+          secret experiments, terrifying supernatural forces and one strange
+          little girl.
+          </p>
+          <div class="hero-button">
+            <button class="btn btn-play">
+                <i class="fa fa-play"></i>Play
+                <button class="btn btn-more-info">
+                    <i class="fa fa-info-circle"></i>More info</button>
+            </button>
+          </div>
+        </div>
+    </div>
+  
+     <!-- movie row -->
+<div class="container">
+  <section class="content-section">
+    <h2 class="section-title">Only on Netflix</h2>
+
+    <div class="content-row">
+      <!-- single card -->
+      <div class="content-card">
+        <img src="mission.webp" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">When Life Gives You Tangerines</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="content-card">
+        <img src="oxy.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">Oxygen</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="jat.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">JAAT</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="Tea.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">Teacher</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="Tan.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">TANDEL</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="vaasi.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">VAASI</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="bheed.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">BHEED</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="dear.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">DEAR</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   <div class="content-row">
+      <!-- single card -->
+      <div class="content-card">
+        <img src="kan.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">KANTARA</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="content-card">
+        <img src="mad.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">MAD</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="jack.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">JACK</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="dasara.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">DASARA</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="mirage.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">MIRAGE</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="hi.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">HI NANNA</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="kush.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">KUSHI</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="lal.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">LALSINGH CHADDHA</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<div class="content-row">
+      <!-- single card -->
+      <div class="content-card">
+        <img src="baby.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">OH BABY</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="content-card">
+        <img src="jer.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">JERSEY</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="adi.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">ADIPURUSH</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="shyam.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">SHYAM SINGHA ROY</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="pani.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">PANIPAT</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="luv.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">LOVE TODAY</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="uppena.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">UPPENA</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <!-- <div class="info-badge">HD</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="content-card">
+        <img src="ani.jpeg" alt="When Life Gives You Tangerines" />
+        <!-- <div class="netflix-badge">N</div> -->
+
+        <div class="card-overlay">
+          <div class="overlay-top">
+            <div class="netflix-badge">N</div>
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-title">ANIMAL</div>
+            <div class="overlay-controls">
+              <div class="control-btn play-btn">
+                  <i class="fas fa-play"></i>
+              </div>
+              <div class="control-btn check-btn">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="control-btn thumbs-btn">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <div class="control-btn more-btn">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="overlay-info">
+              <div class="info-badge">TV-MA</div>
+              <div class="info-badge">Limited Series</div>
+              <div class="info-badge">HD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</div>
+
+  <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Audio Description</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Legal Notices</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Corporate Information</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Media Center</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <button class="service-code">Service Code</button>
+          <p class="copyright">© 1997-2024 Netflix, Inc.</p>
+        </div>
+      </div>
+    </footer>
+
+<script src="script.js">
+</script>
+    
+</body>
+</html>

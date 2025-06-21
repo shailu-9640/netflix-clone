@@ -1,0 +1,492 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    color:#fff;
+}
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding: 20px 60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.7)0%,rgba(0,0,0,0)100%);
+    z-index:100%;
+    transition:background-color 0.3s;
+    
+}
+.navbar{
+    background-color:black;
+
+}
+.logo{
+    height:25px;
+    cursor:pointer;
+}
+.navbar-nav{
+    display: flex;
+    gap:20px;
+}
+.nav-link{
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size:14px;
+    transition:color 0.3s
+}
+.nav-link:hover{
+    color: #b3b3b3;
+}
+.navbar-right{
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.navbar-right i{
+    font-size: 20px;
+    cursor:pointer;
+}
+.profile-icon{
+    width:32px;
+    height:32px;
+    border-radius: 5px;
+}
+.hero{
+   height:80vh;
+   padding-top: 100px;
+   background: linear-gradient(to bottom,rgba(0,0,0,0.4)0%,rgba(0,0,0,0.8)100%),url(stranger-things.webp);
+   display:flex;
+   background-size: 100%;
+   align-items: center;
+   justify-content: center;
+   padding:0 60px;
+   margin-bottom:20px;
+}
+.hero-content{
+    max-width:600px;
+}
+.hero-title{
+    font-size:48px;
+    margin-bottom:16px;
+}
+.hero-description{
+    font-size:18px;
+    margin-bottom: 24px;
+    color:#e5e5e5
+}
+.hero-button{
+    display:flex;
+    gap:17px;
+}
+.btn{
+    background-color: #fff;
+    color:#000;
+    padding:5px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    gap:8px;
+    transition: all 0.3;
+}
+.btn-play{
+    background-color: #fff;
+    color:#000;
+     text-transform: none !important;
+}
+.btn-play:hover{
+    background-color: rgba(255,255,255,0.75);
+}
+.btn-more-info:hover{
+    background-color: rgba(255,255,255,0.75);
+}
+
+/* movie section */
+.container{
+    max-width:100%;
+    padding: 0 4%;
+}
+/* Section style */
+.content-section{
+    margin-bottom: 50px;
+}
+.section-title{
+    font-size:1.8rem;
+    font-weight: 700;
+    margin-bottom:20px;
+    color:white;
+    letter-spacing: 0.5px;
+}
+.content-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+.content-row::-webkit-scrollbar {
+    height: 8px;
+}
+.content-row::-webkit-scrollbar-track {
+    background: transparent;
+}
+.content-row::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* content card */
+.content-card {
+    position: relative;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+}
+.content-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* image inside card */
+.content-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+.content-row::-webkit-scrollbar {
+    height: 8px;
+}
+.content-row::-webkit-scrollbar-track {
+    background: transparent;
+}
+.content-row::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 5px;
+} */
+
+/* content card */
+/* .content-card {
+    position: relative;
+    min-width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+} */
+.content-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* image inside card */
+.content-card img {
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    transition: brightness 0.3s ease;
+}
+/* netflix badge */
+.netflix-badge{
+    position: relative;
+    top:8px;
+    left:8px;
+    background-color: red;
+    color:white;
+    width:24px;
+    height:24px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 2;
+}
+/* card overlay */
+
+ .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  padding: 15px;
+  color: white;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.content-card:hover .card-overlay {
+  opacity: 1;
+}
+.overlay-top{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.overlay-bottom{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.overlay-title{
+    font-size:16px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    /* margin-bottom: 10px; */
+}
+.overlay-controls{
+    display:flex;
+    gap:8px;
+    margin-bottom: 5px;
+    
+}
+
+
+.control-btn {
+  width: 35px;
+  height: 25px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white; 
+  border-radius: 4px;      
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 14px;
+}
+
+
+
+/* ---------- INFO BADGES (“TV‑MA”, “HD”, …) ---------- */
+
+.overlay-info{
+  display:flex;
+  gap:5px;
+  flex-wrap:wrap; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px; 
+  justify-content: flex-start;
+  
+        /* if the row is too long it will wrap down */
+}
+.control-btn:hover{
+    background-color: rgba(255,255,255,0.3);
+    transform:scale(1.1);
+}
+
+
+.play-btn .check-btn .thumbs-btn .more-btn{ 
+    background-color: grey;
+}
+/* .play-btn:hover{
+    background-color:white;
+} 
+.check-btn:hover{
+    background-color: rgba(255,255,255,0.9);
+}
+.thumbs-btn:hover{
+    background-color: rgba(255,255,255,0.9);
+}
+.more-btn:hover{
+    background-color: rgba(255,255,255,0.9);
+} */
+
+.info-badge{
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    padding:3px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
+
+/* .play-btn::before{
+    content:"👍"
+} */
+
+.play-btn i {
+  color:grey; /* dark black */
+  font-size: 18px;
+}
+.content-card::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: linear-gradient(to bottom,
+    transaparent 0%,
+    transparent 50%,
+    rgba(0,0,0,0.8)100%
+    );
+    z-index:1;
+}
+@media (max-width:120px){
+    .container{
+        padding:0 3%;
+
+    }
+    .container-card{
+        min-width:220px;
+        height:125px;
+    }
+    .section-title{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width:760px){
+   .container{
+    padding:0 2%;
+   }
+   .content-card{
+    min-width:180px;
+    height:100px;
+   }
+}
+
+.footer {
+  background-color: #000;
+  color: #808080;
+  padding: 50px 60px 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  color: #808080;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #fff;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+  color: #808080;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.service-code {
+  background: transparent;
+  color: #808080;
+  border: 1px solid #808080;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.service-code:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #808080;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px 20px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
